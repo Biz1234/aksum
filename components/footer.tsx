@@ -124,7 +124,7 @@ export default function Footer() {
                 style={{ color: "rgba(255,255,255,0.55)" }}
               >
                 <Mail size={16} style={{ color: "#D4AF37" }} />
-                aksumtech@aksumtechnologies.com
+                Axumtech@gmail.com
               </a>
             </div>
 

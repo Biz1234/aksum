@@ -19,7 +19,7 @@ export default function ContactSection() {
   }
 
   const contactInfo = [
-    { icon: <Mail size={18} />, label: "Email", value: "axumitetech@gmail.com" },
+    { icon: <Mail size={18} />, label: "Email", value: "axumtech@gmail.com" },
     { icon: <Phone size={18} />, label: "Phone", value: "+251 932 367 491" },
   ]
 
