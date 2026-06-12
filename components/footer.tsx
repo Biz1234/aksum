@@ -116,7 +116,7 @@ export default function Footer() {
                 style={{ color: "rgba(255,255,255,0.55)" }}
               >
                 <Phone size={16} style={{ color: "#D4AF37" }} />
-                +251 921030278
+                +251 968 665 356
               </a>
               <a
                 href="mailto:aksumtech@aksumtechnologies.com"
@@ -124,7 +124,7 @@ export default function Footer() {
                 style={{ color: "rgba(255,255,255,0.55)" }}
               >
                 <Mail size={16} style={{ color: "#D4AF37" }} />
-                Axumtech@gmail.com
+                Axum@gmail.com
               </a>
             </div>
 
