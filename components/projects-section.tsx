@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { ExternalLink, Eye, ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
@@ -89,26 +88,6 @@ export default function ProjectsSection() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                {/* View Project Button - Appears on Hover */}
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-100 scale-90">
-                  <button 
-                    className="px-6 py-3 rounded-xl flex items-center gap-2 text-sm font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                    style={{ 
-                      background: "#D4AF37",
-                      color: "#1E293B",
-                      boxShadow: "0 10px 25px -5px rgba(212,175,55,0.3)"
-                    }}
-                    onClick={() => window.open('#', '_blank')}
-                  >
-                    <Eye size={16} />
-                    View
-                    <ArrowUpRight size={14} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                  </button>
-                </div>
 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
@@ -132,8 +111,6 @@ export default function ProjectsSection() {
                 <p className="text-sm leading-relaxed" style={{ color: "#6B7280" }}>
                   {project.description}
                 </p>
-
-          
               </div>
 
               {/* Decorative Corner */}
