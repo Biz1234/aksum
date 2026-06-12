@@ -10,36 +10,7 @@ const clients = [
     category: "Education",
     description: "Higher Education"
   },
-  {
-    name: "Commercial Bank of Ethiopia",
-    logo: "/images/cbe-logo.png",
-    category: "Finance",
-    description: "Banking & Finance"
-  },
-  {
-    name: "Ethiopian Airlines",
-    logo: "/images/ethiopian-logo.png",
-    category: "Aviation",
-    description: "Transportation"
-  },
-  {
-    name: "Ethio Telecom",
-    logo: "/images/ethio-telecom-logo.png",
-    category: "Telecom",
-    description: "Communications"
-  },
-  {
-    name: "Dashen Bank",
-    logo: "/images/dashen-logo.png",
-    category: "Finance",
-    description: "Banking"
-  },
-  {
-    name: "Ministry of Health",
-    logo: "/images/moh-logo.png",
-    category: "Healthcare",
-    description: "Government"
-  },
+
 ]
 
 // Fallback logos for demo - you can replace with actual images
@@ -77,17 +48,24 @@ export default function ClientsSection() {
             <HeartHandshake size={16} style={{ color: "#D4AF37" }} />
             <span className="text-sm font-medium" style={{ color: "#D4AF37" }}>Our Partners</span>
           </div>
-        
+
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#111827" }}>
+            Trusted by <span style={{ color: "#D4AF37" }}>Organizations</span>
+          </h2>
+
+          <p className="text-lg leading-relaxed" style={{ color: "#6B7280" }}>
+            We work with institutions and teams that value reliable delivery, clear communication, and long-term results.
+          </p>
         </div>
 
         
 
         {/* Client Logos Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 place-items-center gap-4 lg:gap-6">
           {clients.map((client, index) => (
             <div
               key={client.name}
-              className="group relative"
+              className="group relative w-full max-w-xs"
               style={{
                 animation: `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`,
                 opacity: 0,
@@ -161,17 +139,17 @@ export default function ClientsSection() {
                style={{ background: "rgba(212,175,55,0.03)", border: "1px solid rgba(212,175,55,0.1)" }}>
             <div className="flex items-center gap-2 text-sm" style={{ color: "#6B7280" }}>
               <Building2 size={16} style={{ color: "#D4AF37" }} />
-              <span>Enterprise Grade</span>
+              <span>Reliable Delivery</span>
             </div>
             <div className="w-px h-4" style={{ background: "#E5E7EB" }} />
             <div className="flex items-center gap-2 text-sm" style={{ color: "#6B7280" }}>
               <Briefcase size={16} style={{ color: "#D4AF37" }} />
-              <span>Government Trusted</span>
+              <span>Quality-Focused Work</span>
             </div>
             <div className="w-px h-4" style={{ background: "#E5E7EB" }} />
             <div className="flex items-center gap-2 text-sm" style={{ color: "#6B7280" }}>
               <HeartHandshake size={16} style={{ color: "#D4AF37" }} />
-              <span>Long-term Partnerships</span>
+              <span>Long-Term Value</span>
             </div>
           </div>
         </div>
@@ -182,7 +160,7 @@ export default function ClientsSection() {
             className="group inline-flex items-center gap-2 text-sm font-medium transition-all duration-300 hover:gap-3"
             style={{ color: "#D4AF37" }}
           >
-            <span>Become Our Next Success Story</span>
+            <span>Start a Partnership Conversation</span>
             <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
           </button>
         </div>

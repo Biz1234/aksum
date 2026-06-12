@@ -36,7 +36,7 @@ export default function Footer() {
   }
 
   return (
-    <footer id="contact" style={{ background: "#111827" }} role="contentinfo">
+    <footer id="site-footer" style={{ background: "#111827" }} role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main footer content */}
         <div className="py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -46,7 +46,7 @@ export default function Footer() {
               <div className="relative w-12 h-12 rounded-xl overflow-hidden">
                 <Image
                   src="/images/aksum-logo2.png"
-                  alt="Aksum Tech Logo"
+                  alt="Axum Tech Logo"
                   fill
                   className="object-contain"
                 />
@@ -130,6 +130,13 @@ export default function Footer() {
 
             {/* Social links */}
             <div className="mt-6">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-white"
+                style={{ color: "rgba(255,255,255,0.55)" }}
+              >
+                Open Contact Form
+              </Link>
               <h4 className="text-xs font-medium mb-3" style={{ color: "rgba(255,255,255,0.4)" }}>
                 Follow Us
               </h4>
@@ -140,7 +147,7 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Aksum Tech on ${social.label}`}
+                    aria-label={`Axum Tech on ${social.label}`}
                     className="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:scale-110"
                     style={{ background: "rgba(212,175,55,0.1)", color: "#D4AF37" }}
                   >
@@ -194,7 +201,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm" style={{ color: "rgba(255,255,255,0.4)" }}>
-            &copy; {new Date().getFullYear()} Aksum Tech. All rights reserved.
+            &copy; {new Date().getFullYear()} Axum Tech. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {["Privacy Policy", "Terms of Service"].map((item) => (

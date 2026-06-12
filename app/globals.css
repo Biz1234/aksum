@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Aksum Tech Brand Colors */
+  /* Axum Tech Brand Colors */
   --brand-gold: #D4AF37;
   --brand-navy: #1E293B;
   --brand-emerald: #10B981;

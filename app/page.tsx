@@ -8,6 +8,7 @@ import TechStackSection from "@/components/techstack-section"
 import BlogsSection from "@/components/blogs-section"
 import TestimonialsSection from "@/components/testimonials-section"
 import ClientsSection from "@/components/clients-section"
+import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <BlogsSection />
       <TestimonialsSection />
       <ClientsSection />
+      <ContactSection />
       <Footer />
     </main>
   )

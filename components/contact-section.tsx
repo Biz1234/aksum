@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, Send } from "lucide-react"
 
 export default function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" })
@@ -19,9 +19,8 @@ export default function ContactSection() {
   }
 
   const contactInfo = [
-    { icon: <Mail size={18} />, label: "Email", value: "hello@aksumtech.com" },
-    { icon: <Phone size={18} />, label: "Phone", value: "+251 900 000 000" },
-    { icon: <MapPin size={18} />, label: "Location", value: "Addis Ababa, Ethiopia" },
+    { icon: <Mail size={18} />, label: "Email", value: "axumitetech@gmail.com" },
+    { icon: <Phone size={18} />, label: "Phone", value: "+251 932 367 491" },
   ]
 
   return (
@@ -35,8 +34,8 @@ export default function ContactSection() {
         {/* Header */}
         <div className="text-center max-w-xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold uppercase tracking-widest mb-4"
-            style={{ color: "#10B981" }}>
-            Get in Touch
+            style={{ color: "#D4AF37" }}>
+            Start a Conversation
           </span>
           <h2
             id="contact-heading"
@@ -74,19 +73,7 @@ export default function ContactSection() {
             ))}
 
             {/* Decorative card */}
-            <div
-              className="mt-4 p-6 rounded-2xl"
-              style={{ background: "#1E293B" }}
-            >
-              <p className="font-heading font-bold text-base mb-2" style={{ color: "#D4AF37" }}>
-                Office Hours
-              </p>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
-                Monday – Friday: 9:00 AM – 6:00 PM (EAT)<br />
-                Saturday: 10:00 AM – 2:00 PM<br />
-                Sunday: Closed
-              </p>
-            </div>
+            
           </div>
 
           {/* Contact Form */}
@@ -107,7 +94,7 @@ export default function ContactSection() {
                     name="name"
                     type="text"
                     required
-                    placeholder="John Doe"
+                    placeholder="abebe kebede"
                     value={form.name}
                     onChange={handleChange}
                     className="px-4 py-3 rounded-xl border text-sm outline-none transition-all focus:ring-2"
@@ -127,7 +114,7 @@ export default function ContactSection() {
                     name="email"
                     type="email"
                     required
-                    placeholder="you@example.com"
+                    placeholder="you@gmail.com"
                     value={form.email}
                     onChange={handleChange}
                     className="px-4 py-3 rounded-xl border text-sm outline-none transition-all focus:ring-2"
@@ -185,7 +172,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm transition-all hover:opacity-90 active:scale-95"
-                style={{ background: "#10B981", color: "#FFFFFF" }}
+                style={{ background: "#D4AF37", color: "#1E293B" }}
               >
                 {submitted ? (
                   "Message Sent! We'll be in touch."

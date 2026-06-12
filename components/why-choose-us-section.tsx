@@ -51,7 +51,7 @@ export default function WhyChooseUsSection() {
           <div>
             <span className="inline-block text-sm font-semibold uppercase tracking-widest mb-4"
               style={{ color: "#10B981" }}>
-              Why Aksum Tech
+              Why Axum Tech
             </span>
             <h2
               id="why-heading"
@@ -63,7 +63,7 @@ export default function WhyChooseUsSection() {
             </h2>
             <p className="text-base leading-relaxed mb-8" style={{ color: "rgba(255,255,255,0.65)" }}>
               Choosing the right technology partner is critical to your success. Here is why hundreds
-              of clients trust Aksum Tech to deliver excellence every time.
+              of clients trust Axum Tech to deliver excellence every time.
             </p>
 
             {/* Guarantees list */}

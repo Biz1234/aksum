@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const sora = Sora({ subsets: ["latin"], variable: "--font-heading" });
 
 export const metadata: Metadata = {
-  title: 'Aksum Tech | Building Digital Solutions for the Future',
-  description: 'Aksum Tech is a technology company providing high-quality software solutions for startups, businesses, and organizations. We focus on innovation, scalable systems, and modern digital experiences.',
+  title: 'Axum Tech | Building Digital Solutions for the Future',
+  description: 'Axum Tech is a technology company providing high-quality software solutions for startups, businesses, and organizations. We focus on innovation, scalable systems, and modern digital experiences.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -1,12 +1,12 @@
-# Aksum Tech Startups - Website
+# Axum Tech Startups - Website
 
-A modern, responsive, and performance-optimized corporate website for **Aksum Tech Startups**, a technology company dedicated to building cutting-edge software solutions for enterprises and startups across Africa.
+A modern, responsive, and performance-optimized corporate website for **Axum Tech Startups**, a technology company dedicated to building cutting-edge software solutions for enterprises and startups across Africa.
 
-![Aksum Tech Hero Preview](/images/slider-1.jpg) <!-- Optional banner preview logic if public paths are used -->
+![Axum Tech Hero Preview](/images/slider-1.jpg) <!-- Optional banner preview logic if public paths are used -->
 
 ## Project Overview
 
-The Aksum Tech website is a single-page application (SPA) architecture built with Next.js App Router, featuring a highly dynamic and interactive user interface. It is designed to showcase the company's services, values, past projects, technology stack, and blog updates, serving as the digital storefront and a lead generation tool.
+The Axum Tech website is a single-page application (SPA) architecture built with Next.js App Router, featuring a highly dynamic and interactive user interface. It is designed to showcase the company's services, values, past projects, technology stack, and blog updates, serving as the digital storefront and a lead generation tool.
 
 ### Core Sections
 - **Hero & Navigation**: Dynamic hero slider with CTA and sticky navigation with smooth scroll.
@@ -90,4 +90,4 @@ npm run start
 
 ## License
 
-This project is proprietary and confidential to Aksum Tech.
+This project is proprietary and confidential to Axum Tech.

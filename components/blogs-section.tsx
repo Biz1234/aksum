@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import { Calendar, ArrowRight, Clock, BookOpen, Sparkles } from "lucide-react"
 
 const blogs = [
@@ -155,17 +154,15 @@ export default function BlogsSection() {
                 </p>
 
                 {/* Read More Link */}
-                <Link
-                  href={`/blog/${blog.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                  className="inline-flex items-center gap-2 text-sm font-medium transition-all duration-300 group/link"
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-2 text-sm font-medium cursor-default"
                   style={{ color: "#D4AF37" }}
+                  aria-label={`Article preview for ${blog.title}`}
                 >
-                  <span>Read Article</span>
-                  <ArrowRight size={14} className="transition-transform duration-300 group-hover/link:translate-x-1" />
-                  
-                  {/* Animated underline */}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover/link:w-full transition-all duration-300" />
-                </Link>
+                  <span>Preview only</span>
+                  <ArrowRight size={14} />
+                </button>
               </div>
 
               {/* Decorative Corner */}
@@ -178,27 +175,18 @@ export default function BlogsSection() {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Link
-            href="/blog"
-            className="group relative inline-flex items-center gap-3 px-8 py-3.5 rounded-xl font-semibold overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95"
-            style={{ 
+          <div
+            className="inline-flex items-center gap-3 px-8 py-3.5 rounded-xl font-semibold"
+            style={{
               background: "linear-gradient(135deg, #1E293B 0%, #2D3A4F 100%)",
               color: "#FFFFFF",
               boxShadow: "0 10px 25px -5px rgba(30,41,59,0.3)"
             }}
+            aria-label="More articles coming soon"
           >
-            <span className="relative z-10 flex items-center gap-2">
-              <BookOpen size={16} />
-              View All Articles
-              <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-            </span>
-            
-            {/* Shine Effect */}
-            <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"
-                  style={{
-                    background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)"
-                  }} />
-          </Link>
+            <BookOpen size={16} />
+            View All Articles Coming Soon
+          </div>
         </div>
 
       

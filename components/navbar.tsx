@@ -88,12 +88,12 @@ export default function Navbar() {
           <button
             onClick={() => handleNavClick("#home")}
             className="flex items-center gap-2 sm:gap-3 group cursor-pointer relative"
-            aria-label="Aksum Tech - Go to home"
+            aria-label="Axum Tech - Go to home"
           >
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/images/aksum-logo2.png"
-                alt="Aksum Tech Logo"
+                alt="Axum Tech Logo"
                 fill
                 className="object-contain"
                 priority
@@ -102,7 +102,7 @@ export default function Navbar() {
             
             {/* Brand name - hidden on mobile, visible on tablet up */}
             <span className="hidden sm:block text-base lg:text-lg font-semibold text-white/90 group-hover:text-white transition-colors">
-              Aksum Tech
+              Axum Tech
             </span>
           </button>
 

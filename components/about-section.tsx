@@ -43,7 +43,7 @@ export default function AboutSection() {
               <span style={{ color: "#D4AF37" }}>Moves Africa Forward</span>
             </h2>
             <p className="text-base leading-relaxed mb-4" style={{ color: "#374151" }}>
-              Founded with a vision to bridge the technology gap across Africa, Aksum Tech delivers
+              Founded with a vision to bridge the technology gap across Africa, Axum Tech delivers
               modern, scalable software solutions to startups, enterprises, and organizations of all sizes.
               We combine deep technical expertise with a passion for solving real problems.
             </p>
